@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	position: relative;
+}
+.road-line {
+	width: 100%;
+	position: absolute;
+	border-bottom: 266px solid;
+	top: 203px;
+}
+
+.white-lines {
+	width: 100%;
+    border-bottom: 36px double #fff;
+    position: absolute;
+	top: 299px;
+}
+
+.car {
+  position: absolute;
+  z-index: 1;
+  animation: carmove 10s linear infinite;
+  left: -500px;
+  top: 144px;
+	width: 200px;
+}
+
+@keyframes carmove {
+  0% {
+    left: -500px;
+  }
+
+  100% {
+    left: 1400px;
+  }
+}
+
+@media (max-width:768px) {
+	.car {
+		width: 300px;
+		top: 113px;
+	}
+}
